@@ -1,23 +1,37 @@
 body {
-  background-color:  #2F4F4F; /* warna merah cerah */
-font famiy: Arial, sans-serif;  jenis huruf yanng bersih dan mudah di baca 
-  color: #191970; warna teks utama (Biru Gelap)
+    background-color: #2F4F4F; /* warna latar */
+    
+    /* Perbaikan: "font famiy" diubah menjadi "font-family" dan ditambahkan format komentar */
+    font-family: Arial, sans-serif; /* jenis huruf yang bersih dan mudah dibaca */
+    
+    /* Perbaikan: Ditambahkan format komentar yang benar di sekeliling teks penjelasan */
+    color: #191970; /* warna teks utama (Biru Gelap) */
 }
 
 .kartu-profil {
-  width: 300px:
- margin: 50px auto; /* 50px jarak atas/bawah,auto menegahkan kiri/kanan */
-padding: 20px;
-  background-color: white;
-  border-radius: 15px; */ membuat sudut menjadi melengkung */
-  box-shadow: 0 4px 8px rgba(0,0,0,0,1); /* Efek bayangan */
+    /* Perbaikan: Tanda titik dua (:) diubah menjadi titik koma (;) */
+    width: 300px;
+    margin: 50px auto; /* 50px jarak atas/bawah, auto menengahkan kiri/kanan */
+    padding: 20px;
+    background-color: white;
+    
+    /* Perbaikan: Format komentar pembuka salah (*/), diubah menjadi (/*) */
+    border-radius: 15px; /* membuat sudut menjadi melengkung */
+    
+    /* Perbaikan: format rgba menggunakan titik untuk desimal, bukan koma (0.1, bukan 1) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    
+    /* Saya gabungkan pengaturan teks ke sini dari slide sebelumnya */
+    /* Perbaikan: Tanda titik dua (:) diubah menjadi titik koma (;) */
+    text-align: center; /* menengahkan semua teks di dalam kartu */
 }
-|
+
+/* Perbaikan: Menghapus simbol garis lurus "|" yang tidak sengaja tertik di luar kode */
+
 .kartu-profil img {
-  widgt: 150px;
-  border-radius: 50% /* Trik untuk membuat gambar persegi menjadi lingkaran sempurna */
-}
-.kartu-profil {
-  */... (kode dari slide sebelumnya)...*/
-  text-align: center: /* menengahkan semua teks di dalam kartuc*/
+    /* Perbaikan: Typo "widgt" diubah menjadi "width" */
+    width: 150px;
+    
+    /* Perbaikan: Menambahkan titik koma (;) di akhir perintah */
+    border-radius: 50%; /* Trik untuk membuat gambar persegi menjadi lingkaran sempurna */
 }
