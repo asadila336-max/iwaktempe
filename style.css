@@ -1,37 +1,41 @@
 body {
-    background-color: #2F4F4F; /* warna latar */
+    background-color: #2F4F4F; /* Warna latar belakang */
+    font-family: Arial, sans-serif; /* Jenis huruf */
+    color: #191970; /* Warna teks */
     
-    /* Perbaikan: "font famiy" diubah menjadi "font-family" dan ditambahkan format komentar */
-    font-family: Arial, sans-serif; /* jenis huruf yang bersih dan mudah dibaca */
-    
-    /* Perbaikan: Ditambahkan format komentar yang benar di sekeliling teks penjelasan */
-    color: #191970; /* warna teks utama (Biru Gelap) */
+    /* --- KODE BARU UNTUK KETENGAH LAYAR --- */
+    display: flex; /* Mengaktifkan mode flexbox (mode tata letak fleksibel) */
+    justify-content: center; /* Menengahkan posisi secara horizontal (kiri ke kanan) */
+    align-items: center; /* Menengahkan posisi secara vertikal (atas ke bawah) */
+    height: 100vh; /* Membuat tinggi body memenuhi 100% tinggi layar monitor/HP (Viewport Height) */
+    margin: 0; /* Menghilangkan jarak bawaan dari browser agar posisinya benar-benar pas */
 }
 
 .kartu-profil {
-    /* Perbaikan: Tanda titik dua (:) diubah menjadi titik koma (;) */
-    width: 300px;
-    margin: 50px auto; /* 50px jarak atas/bawah, auto menengahkan kiri/kanan */
-    padding: 20px;
-    background-color: white;
+    width: 350px; /* Lebar kartu agar membentuk segi empat (kotak) */
     
-    /* Perbaikan: Format komentar pembuka salah (*/), diubah menjadi (/*) */
-    border-radius: 15px; /* membuat sudut menjadi melengkung */
-    
-    /* Perbaikan: format rgba menggunakan titik untuk desimal, bukan koma (0.1, bukan 1) */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
-    
-    /* Saya gabungkan pengaturan teks ke sini dari slide sebelumnya */
-    /* Perbaikan: Tanda titik dua (:) diubah menjadi titik koma (;) */
-    text-align: center; /* menengahkan semua teks di dalam kartu */
+    /* Jika kamu ingin kartunya berbentuk persegi sempurna (sama sisi), 
+       hapus tanda komentar pada baris height di bawah ini: */
+    /* height: 350px; */ 
+
+    background-color: white; /* Warna latar kartu */
+    padding: 30px; /* Jarak antara isi teks dengan tepi kotak */
+    border-radius: 15px; /* Membuat sudut kotak menjadi melengkung, bukan lancip */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Membuat efek bayangan yang lebih lembut */
+    text-align: center; /* Menengahkan semua teks dan gambar yang ada di dalam kartu */
 }
 
-/* Perbaikan: Menghapus simbol garis lurus "|" yang tidak sengaja tertik di luar kode */
-
 .kartu-profil img {
-    /* Perbaikan: Typo "widgt" diubah menjadi "width" */
-    width: 150px;
-    
-    /* Perbaikan: Menambahkan titik koma (;) di akhir perintah */
-    border-radius: 50%; /* Trik untuk membuat gambar persegi menjadi lingkaran sempurna */
+    width: 120px; /* Lebar gambar */
+    height: 120px; /* Tinggi gambar (dibuat sama dengan lebar agar proporsional) */
+    border-radius: 50%; /* Membuat gambar membulat sempurna (lingkaran) */
+    object-fit: cover; /* Mencegah gambar menjadi gepeng atau ditarik jika ukuran aslinya tidak persegi */
+    margin-bottom: 15px; /* Memberikan jarak antara gambar dengan nama kamu */
+}
+
+/* Sedikit tambahan agar tombol "sapa saya" terlihat lebih rapi di dalam kotak */
+#sapaButton {
+    margin-top: 10px;
+    padding: 8px 15px;
+    cursor: pointer; /* Mengubah kursor panah menjadi ikon jari saat diarahkan ke tombol */
 }
