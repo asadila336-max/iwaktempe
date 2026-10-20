@@ -18,7 +18,7 @@ body {
        hapus tanda komentar pada baris height di bawah ini: */
     /* height: 350px; */ 
 
-    background-color: white; /* Warna latar kartu */
+    background-color: blue; /* Warna latar kartu */
     padding: 30px; /* Jarak antara isi teks dengan tepi kotak */
     border-radius: 15px; /* Membuat sudut kotak menjadi melengkung, bukan lancip */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Membuat efek bayangan yang lebih lembut */
