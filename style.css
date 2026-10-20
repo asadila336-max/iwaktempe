@@ -4,7 +4,7 @@ font famiy: Arial, sans-serif;  jenis huruf yanng bersih dan mudah di baca
   color: #191970; warna teks utama (Biru Gelap)
 }
 
-.kartu profil {
+.kartu-profil {
   width: 300px:
  margin: 50px auto; /* 50px jarak atas/bawah,auto menegahkan kiri/kanan */
 padding: 20px;
